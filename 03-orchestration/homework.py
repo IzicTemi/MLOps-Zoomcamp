@@ -123,8 +123,6 @@ def main(date=None):
     dv_save = open(f'./models/dv-{date}.bin', "wb")
     pickle.dump(dv, dv_save)
 
-main('2021-08-15')
-'''
 DeploymentSpec(
     flow=main,
     parameters={'date':'2021-08-15'},
@@ -134,4 +132,3 @@ DeploymentSpec(
     flow_runner=SubprocessFlowRunner(),
     tags=["testing"]
 )
-'''
