@@ -5,4 +5,4 @@
 mlruns/
 __pycache__
 .vscode
-.terraform
+.pytest_cache
