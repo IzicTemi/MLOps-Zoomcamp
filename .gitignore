@@ -3,3 +3,5 @@
 *.b
 *.db
 mlruns/
+__pycache__
+.vscode
