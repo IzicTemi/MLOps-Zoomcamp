@@ -7,4 +7,9 @@ mlruns/
 __pycache__/
 .vscode/
 .pytest_cache/
-**/.terraform/**
+__pycache__/
+
+**.env
+**.terraform/
+**.terraform.lock*
+**terraform.tfstate*
