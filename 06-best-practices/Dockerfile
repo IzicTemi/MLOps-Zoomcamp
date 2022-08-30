@@ -9,6 +9,6 @@ RUN pipenv install --system --deploy
 
 ADD mlruns ./mlruns
 
-COPY [ "lambda_function.py", "model.py", "mlflow.db", "./" ]
+COPY [ "lambda_function.py", "model.py", "./" ]
 
 CMD [ "lambda_function.lambda_handler" ]
