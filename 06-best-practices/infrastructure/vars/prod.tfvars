@@ -1,0 +1,7 @@
+source_stream_name = "my-prod-ride-events"
+output_stream_name = "my-prod-ride-predictions"
+model_bucket = "my-prod-mlflow-models"
+lambda_function_local_path = "../lambda_function.py"
+docker_image_local_path = "../Dockerfile"
+ecr_repo_name = "my-prod-stream-model-duration"
+lambda_function_name = "my-prod-prediction-lambda"
