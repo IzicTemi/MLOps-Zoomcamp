@@ -16,6 +16,7 @@ resource "aws_lambda_function" "kinesis_lambda" {
     }
   }
   timeout = 180
+  memory_size = 512
 }  
 
 # Lambda Invoke & Event Source Mapping:
