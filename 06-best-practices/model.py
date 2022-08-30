@@ -12,9 +12,6 @@ def get_model_location(run_id):
     if model_location is not None:
         return model_location
 
-    model_bucket = os.getenv('MODEL_BUCKET', 'mlflow-models-alexey')
-    experiment_id = os.getenv('MLFLOW_EXPERIMENT_ID', '1')
-
     model_location = f'./mlruns/{run_id}/artifacts/model'
     return model_location
 
@@ -86,7 +83,7 @@ class KinesisCallback:
 
     def put_record(self, prediction_event):
         ride_id = prediction_event['prediction']['ride_id']
- 
+
         self.kinesis_client.put_record(
             StreamName=self.prediction_stream_name,
             Data=json.dumps(prediction_event),
