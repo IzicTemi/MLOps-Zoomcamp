@@ -76,6 +76,6 @@ output "predictions_stream_name" {
 }
 
 output "ecr_repo" {
-  value = "${var.ecr_repo_name}_${var.project_id}"
+  value = "${var.ecr_repo_name}-${var.project_id}"
 }
 
