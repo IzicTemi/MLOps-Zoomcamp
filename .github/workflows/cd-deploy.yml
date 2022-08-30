@@ -70,6 +70,7 @@ jobs:
           MODEL_BUCKET_PROD: ${{ steps.tf-apply.outputs.model_bucket }}
         run: |
           export RUN_ID=c89bbf86b5a5486a9eb90a880c4a6a16
+          echo "::set-output name=run_id::${RUN_ID}"
 
       - name: Update Lambda
         env:
