@@ -4,13 +4,13 @@ flavors:
     env: conda.yaml
     loader_module: mlflow.sklearn
     model_path: model.pkl
-    python_version: 3.9.5
+    python_version: 3.9.7
   sklearn:
     code: null
     pickled_model: model.pkl
     serialization_format: cloudpickle
     sklearn_version: 1.0.2
-mlflow_version: 1.26.0
-model_uuid: 1e00739e9b164fdbb508ff3dd2439ebb
-run_id: c89bbf86b5a5486a9eb90a880c4a6a16
-utc_time_created: '2022-06-25 09:05:35.498005'
+mlflow_version: 1.26.1
+model_uuid: 78edf19ceea5463aadce7d84f3f9bc82
+run_id: e1efc53e9bd149078b0c12aeaa6365df
+utc_time_created: '2022-06-01 12:49:55.846831'
