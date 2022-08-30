@@ -5,7 +5,7 @@ if [[ -z "${GITHUB_ACTIONS}" ]]; then
 fi
 
 if [ "${LOCAL_IMAGE_NAME}" == "" ]; then 
-    LOCAL_TAG=`date +"%Y-%m-%d-%H-%M"`
+    LOCAL_TAG=`date +"%Y-%m-%d-%H"`
     export LOCAL_IMAGE_NAME="stream-model-duration:${LOCAL_TAG}"
     echo "LOCAL_IMAGE_NAME is not set, building a new image with tag ${LOCAL_IMAGE_NAME}"
     docker build -t ${LOCAL_IMAGE_NAME} ..
@@ -17,7 +17,7 @@ export PREDICTIONS_STREAM_NAME="ride_predictions"
 
 docker-compose up -d
 
-sleep 5
+sleep 10
 
 aws --endpoint-url=http://localhost:4566 \
     kinesis create-stream \

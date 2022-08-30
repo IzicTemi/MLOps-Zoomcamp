@@ -20,10 +20,10 @@ def get_model_location(run_id):
 
 
 def load_model(run_id):
-    model_uri = f"runs:/{run_id}/model"
+    # model_uri = f"runs:/{run_id}/artifacts/model"
     model_path = get_model_location(run_id)
     model = mlflow.pyfunc.load_model(model_path)
-    mlflow.pyfunc.get_model_dependencies(model_uri)
+    # mlflow.pyfunc.get_model_dependencies(model_uri)
     return model
 
 
