@@ -7,7 +7,9 @@ name = "pypi"
 boto3 = "*"
 mlflow = "*"
 scikit-learn = "==1.0.2"
-deepdiff = "*"
+cloudpickle = "==2.1.0"
+psutil = "==5.9.1"
+typing-extensions = "==4.1.1"
 
 [dev-packages]
 pytest = "*"
@@ -15,6 +17,7 @@ pylint = "*"
 black = "*"
 isort = "*"
 pre-commit = "*"
+deepdiff = "*"
 
 [requires]
 python_version = "3.9"
